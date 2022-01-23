@@ -35,7 +35,14 @@ public class CriaConta {
 		System.out.println("Número: " + terceiraConta.numero);
 		System.out.println("Saldo: " + terceiraConta.saldo + " reais");
 		
+		if(primeiraConta == segundaConta) {
+			System.out.println("mesma conta");
+		}else {
+			System.out.println("contas diferentes");
+		}
 		
+		System.out.println(primeiraConta);
+		System.out.println(segundaConta);
 	}
 
 }
