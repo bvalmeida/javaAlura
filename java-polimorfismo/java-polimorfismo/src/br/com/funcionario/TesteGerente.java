@@ -3,22 +3,21 @@ package br.com.funcionario;
 public class TesteGerente {
 	public static void main(String[] args) {
 		
-		FuncionarioTeste funcionarioTeste = new FuncionarioTeste();
-		funcionarioTeste.setTipo(0);
-		funcionarioTeste.setSalario(3000);
+		Gerente g1 = new Gerente();
+		g1.setNome("Paulo Barbosa");
+		g1.setCpf("565.464.999-52");
+		g1.setSalario(4000);
 		
-		System.out.println(funcionarioTeste.getBonificacao());
+		System.out.println("Nome: " + g1.getNome());
+		System.out.println("Cpf: " + g1.getCpf());
+		System.out.println("Salário: " + g1.getSalario());
 		
-		FuncionarioTeste gerente2 = new FuncionarioTeste();
-		gerente2.setTipo(1);
-		gerente2.setSalario(5000);
+		g1.setSenha(4978);
+		boolean autenticou = g1.autentica(4978);
 		
-		System.out.println(gerente2.getBonificacao());
+		System.out.println(autenticou);
 		
-		FuncionarioTeste gerente3 = new FuncionarioTeste();
-		gerente3.setTipo(2);
-		gerente3.setSalario(10000);
-		
-		System.out.println(gerente3.getBonificacao());
+		System.out.println(g1.getBonificacao());
+	
 	}
 }
