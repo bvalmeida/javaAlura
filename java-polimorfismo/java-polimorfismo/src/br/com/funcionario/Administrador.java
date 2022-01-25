@@ -1,15 +1,15 @@
 package br.com.funcionario;
 
-public class Gerente extends Funcionario implements Autenticavel {
-
+public class Administrador extends Funcionario implements Autenticavel {
+	
 	private AutenticavelImpl autenticador;
 	
+	@Override
 	public double getBonificacao() {
-		System.out.println("Chamando o método de bonificação do gerente");
-		return super.getSalario();
+		return 50;
 	}
-	
-	public Gerente() {
+
+	public Administrador() {
 		this.autenticador = new AutenticavelImpl();
 	}
 	
@@ -22,4 +22,5 @@ public class Gerente extends Funcionario implements Autenticavel {
 	public boolean autentica(int senha) {
 		return this.autenticador.autentica(senha);
 	}
+
 }
