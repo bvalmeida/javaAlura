@@ -1,6 +1,12 @@
 package br.com.bytebank.herdado.conta.modelo;
 
-
+/**
+ * 
+ * Classe que representa um cliente no ByteBank.
+ * 
+ * @author Breno Vieira
+ * @version 0.1
+ */
 public abstract class Cliente {
 
     private String nome;

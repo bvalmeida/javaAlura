@@ -1,10 +1,14 @@
 package br.com.bytebank.herdado.conta.test;
 
+import br.com.bytebank.herdado.conta.especial.ContaEspecial;
 import br.com.bytebank.herdado.conta.modelo.ContaCorrente;
 import br.com.bytebank.herdado.conta.modelo.ContaPoupanca;
 
 public class TesteContas {
 	public static void main(String[] args) {
+		
+		ContaEspecial ce = new ContaEspecial(123,451);
+		ce.getSaldo();
 		
 		ContaCorrente cc = new ContaCorrente(111, 111);
 		ContaPoupanca cp = new ContaPoupanca(222, 222);
