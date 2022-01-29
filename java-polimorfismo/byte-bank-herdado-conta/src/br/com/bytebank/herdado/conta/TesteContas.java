@@ -9,7 +9,11 @@ public class TesteContas {
 		cc.deposita(100.0);
 		cp.deposita(200.0);
 		
-		cc.transfere(10.0, cp);
+		try {
+			cc.transfere(10.0, cp);			
+		} catch (Exception ex) {
+			System.out.println("Ex: " + ex.getMessage());
+		}
 		
 		System.out.println("Saldo da conta conrrente: " + cc.getSaldo());
 		System.out.println("Saldo da conta poupança: " + cp.getSaldo());
