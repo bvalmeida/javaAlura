@@ -1,4 +1,7 @@
-package br.com.bytebank.herdado.conta;
+package br.com.bytebank.herdado.conta.test;
+
+import br.com.bytebank.herdado.conta.modelo.ContaCorrente;
+import br.com.bytebank.herdado.conta.modelo.ContaPoupanca;
 
 public class TesteContas {
 	public static void main(String[] args) {

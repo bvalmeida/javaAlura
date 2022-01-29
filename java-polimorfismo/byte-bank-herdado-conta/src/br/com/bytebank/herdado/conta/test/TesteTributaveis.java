@@ -1,4 +1,8 @@
-package br.com.bytebank.herdado.conta;
+package br.com.bytebank.herdado.conta.test;
+
+import br.com.bytebank.herdado.conta.modelo.CalculadorDeImposto;
+import br.com.bytebank.herdado.conta.modelo.ContaCorrente;
+import br.com.bytebank.herdado.conta.modelo.SeguroDeVida;
 
 public class TesteTributaveis {
 	public static void main(String[] args) {
