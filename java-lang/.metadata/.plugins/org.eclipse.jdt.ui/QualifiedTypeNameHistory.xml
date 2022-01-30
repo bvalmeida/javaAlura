@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="br.com.bytebank.herdado.conta.modelo.ContaCorrente"/>
     <fullyQualifiedTypeName name="br.com.bytebank.herdado.conta.modelo.Conta"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.herdado.conta.modelo.Cliente"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.herdado.conta.modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.herdado.conta.modelo.ContaPoupanca"/>
 </qualifiedTypeNameHistroy>

@@ -35,5 +35,7 @@ public class TesteString {
 		System.out.println(trim);
 		System.out.println(vazio.contains("Alu"));
 		
+		
+		
 	}
 }
