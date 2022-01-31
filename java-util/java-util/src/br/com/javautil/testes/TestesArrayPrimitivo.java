@@ -1,6 +1,6 @@
 package br.com.javautil.testes;
 
-public class TestesObject {
+public class TestesArrayPrimitivo {
 	public static void main(String[] args) {
 		
 		int[] idades = new int[5];
