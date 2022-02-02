@@ -23,10 +23,10 @@ public class TesteComparandoStrings {
 		Conta cc3 = new ContaCorrente(22,11);
 		Conta cc4 = new ContaPoupanca(22,22);
 		
-		Cliente clienteCC1 = new Cliente();
-		Cliente clienteCC2 = new Cliente();
-		Cliente clienteCC3 = new Cliente();
-		Cliente clienteCC4 = new Cliente();
+		Cliente clienteCC1 = new Cliente() {};
+		Cliente clienteCC2 = new Cliente() {};
+		Cliente clienteCC3 = new Cliente() {};
+		Cliente clienteCC4 = new Cliente() {};
 		
 		cc1.setTitular(clienteCC1);
 		cc2.setTitular(clienteCC2);
