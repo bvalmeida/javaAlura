@@ -1,5 +1,9 @@
 package br.com.java.collections.testes;
 
+import java.util.Iterator;
+import java.util.Set;
+import java.util.Vector;
+
 import br.com.java.collections.domain.Aluno;
 import br.com.java.collections.domain.Aula;
 import br.com.java.collections.domain.Curso;
@@ -25,5 +29,29 @@ public class TestaCursoComAluno {
 			System.out.println(a);
 		});
 		
+		for(Aluno a : javaColecoes.getAlunos()) {
+			System.out.println(a);
+		}
+		
+		Set<Aluno> alunos = javaColecoes.getAlunos();
+		Iterator<Aluno> iterador = alunos.iterator();
+		while(iterador.hasNext()) {
+			Aluno proximo = iterador.next();
+			System.out.println(proximo);
+		}
+		
+		Vector<Aluno> vetor = new Vector<>();
+		
+		System.out.println("O aluno " + a1 + " está matriculado?");
+		System.out.println(javaColecoes.estaMatriculado(a1));
+		
+		Aluno turini = new Aluno("Rodrigo Turini", 34604);
+		System.out.println("E esse Turini, está matriculado?");
+		System.out.println(javaColecoes.estaMatriculado(turini));
+		
+		System.out.println("O a1 é equals ao Turini??");
+		System.out.println(a1.equals(turini));
+		
+		System.out.println(a1.hashCode() == turini.hashCode());
 	}
 }
